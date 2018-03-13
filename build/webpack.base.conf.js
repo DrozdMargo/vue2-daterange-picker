@@ -1,16 +1,21 @@
 var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
+var webpack = require('webpack')
 var vueLoaderConfig = require('./vue-loader.conf')
+var moment = require('moment');
+require('moment/locale/ru')
+moment().format();
 
-function resolve (dir) {
+
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
 module.exports = {
   entry: {
     docs: './src/docs.js',
-    ['vue-daterange-picker']: './src/lib.js'
+    ['vue2-daterange-picker']: './src/lib.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -25,6 +30,10 @@ module.exports = {
       '@': resolve('src')
     }
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      moment: "moment"
+    })],
   module: {
     rules: [
       {

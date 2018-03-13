@@ -3,7 +3,7 @@
         <div class="reportrange-text" @click="togglePicker">
             <slot name="input">
                 <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
-                <span v-if="dateFilterApplied">{{startText}} - {{endText}}</span>
+                <span v-if="startText && endText">{{startText}} - {{endText}}</span>
                 <span v-else>Please select a date range.</span>
                 <b class="caret"></b>
             </slot>
@@ -15,7 +15,7 @@
                 <div class="calendar left">
                     <div class="daterangepicker_input hidden-xs">
                         <input class="input-mini form-control" type="text" name="daterangepicker_start"
-                               :value="startText" readonly/>
+                               :value="startText"/>
                         <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
                     </div>
                     <div class="calendar-table">
@@ -31,7 +31,7 @@
                 <div class="calendar right hidden-xs">
                     <div class="daterangepicker_input">
                         <input class="input-mini form-control" type="text" name="daterangepicker_end"
-                               :value="endText" readonly/>
+                               :value="endText"/>
                         <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
                     </div>
                     <div class="calendar-table">
