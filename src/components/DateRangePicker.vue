@@ -226,11 +226,11 @@
       cancelClicked() {
         this.dateFilterApplied = false
         this.open = false
-        this.$emit('cancel')
       },
       customEvent() {
         this.dateFilterApplied = false
         this.open = false
+        this.$emit('cancel')
       }
     },
     computed: {
