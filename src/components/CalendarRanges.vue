@@ -8,12 +8,16 @@
         <ul v-if="ranges">
             <li v-for="(value, key) in ranges" :key="key" @click="selectedRange(key)">{{key}}</li>
         </ul>
+      
+        <div class="ranges-custom-button">
+            <button @click="$emit('customEvent')" class="custom-button">{{custom}}</button>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        props: ['canSelect', 'ranges'],
+        props: ['canSelect', 'ranges', 'custom'],
         methods: {
           selectedRange(rangeType) {
             this.$emit('rangeSelected', rangeType)

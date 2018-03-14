@@ -1,15 +1,15 @@
 {
-  "name": "vue2-daterange-picker-thewildbunch-fork",
+  "name": "vue2-daterange-picker-with-custom-button",
   "version": "0.1.1",
   "description": "˚∆˚ Vue2 date range picker forked from https://innologica.github.io/vue2-daterange-picker/ based on https://github.com/dangrossman/bootstrap-daterangepicker (no jQuery)",
-  "contributor": "The Wild Bunch <thewildbunch@clearlink.com>",
+  "contributor": "Margo Drozd",
   "main": "dist/lib/vue-daterange-picker.min.js",
   "jsnext:main": "src/lib.js",
   "private": false,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Denerot/vue2-daterange-picker.git"
+    "url": "git+https://github.com/DrozdMargo/vue2-daterange-picker.git"
   },
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -109,5 +109,14 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/DrozdMargo/vue2-daterange-picker/issues"
+  },
+  "homepage": "https://github.com/DrozdMargo/vue2-daterange-picker#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": ""
 }

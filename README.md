@@ -25,7 +25,11 @@ export default {
     data() {
         return {
             startDate: '2017-09-05',
-            endDate: '2017-09-15'
+            endDate: '2017-09-15',
+            button: {
+                      url: 'some url',
+                      text: 'some text'
+                    }
         }
     }
 }
@@ -33,7 +37,7 @@ export default {
 
 ```html
 <template>
-    <date-range-picker :startDate="startDate" :endDate="endDate" @input="console.log(value)">
+    <date-range-picker :startDate="startDate" :endDate="endDate" @input="console.log(value)"  @cancel="openSchedules" :custom="button">
 </template>
 ```
 
