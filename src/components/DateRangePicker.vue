@@ -15,7 +15,7 @@
         <div class="calendar left">
           <div class="daterangepicker_input hidden-xs">
             <input class="input-mini form-control" type="text" name="daterangepicker_start"
-                   :value="startText"/>
+                   :value="startText" readonly/>
             <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
           </div>
           <div class="calendar-table">
@@ -31,7 +31,7 @@
         <div class="calendar right hidden-xs">
           <div class="daterangepicker_input">
             <input class="input-mini form-control" type="text" name="daterangepicker_end"
-                   :value="endText"/>
+                   :value="endText" readonly/>
             <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
           </div>
           <div class="calendar-table">
