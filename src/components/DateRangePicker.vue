@@ -137,6 +137,9 @@
       return data
     },
     methods: {
+      calcMonthDate() {
+        this.monthDate = moment(this.end).startOf('month').add(-1, 'month').toDate()
+      },
       nextMonth() {
         this.monthDate = nextMonth(this.monthDate)
       },
@@ -147,21 +150,25 @@
         let thisDateRange = thisMonth()
         this.start = thisDateRange.start
         this.end = thisDateRange.end
+        this.calcMonthDate()
       },
       selectThisYear() {
         let thisDateRange = thisYear()
         this.start = thisDateRange.start
         this.end = thisDateRange.end
+        this.calcMonthDate()
       },
       selectLastWeek() {
         let thisDateRange = lastWeek()
         this.start = thisDateRange.start
         this.end = thisDateRange.end
+        this.calcMonthDate()
       },
       selectLastMonth() {
         let thisDateRange = lastMonth()
         this.start = thisDateRange.start
         this.end = thisDateRange.end
+        this.calcMonthDate()
       },
       dateClick(value) {
         let selectedDate = new Date(value)
