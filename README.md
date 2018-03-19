@@ -12,7 +12,8 @@ https://innologica.github.io/vue2-daterange-picker/
 
 ``` bash
 # install via npm
-npm i vue2-daterange-picker --save
+
+npm i vue2-daterange-picker-with-custom-button --save
 ```
 
 ## Usage
