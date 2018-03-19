@@ -26,10 +26,7 @@ export default {
         return {
             startDate: '2017-09-05',
             endDate: '2017-09-15',
-            button: {
-                      url: 'some url',
-                      text: 'some text'
-                    }
+            button: 'button title'                   
         }
     }
 }
@@ -41,15 +38,10 @@ export default {
 </template>
 ```
 
-## TODO
-
-- [ ] documentation
-- [ ] tests
-- [ ] disabled dates
-- [ ] make install function
-- [ ] export single components
-
-
 ### Run local demo
+
+```npm install```
+
+```npm run dev```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
