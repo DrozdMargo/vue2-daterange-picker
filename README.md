@@ -2,7 +2,6 @@
 
 > Vue2 date range picker base on https://github.com/dangrossman/bootstrap-daterangepicker (no jQuery)
 
-NOT READY FOR PRODUCTION YET
 
 ## Demo
 You can see a demo here: 
@@ -46,3 +45,10 @@ export default {
 ```npm run dev```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+{
+  "keywords": [
+    "vue-daterangepicker",
+    "vue2-daterangepicker",
+    "vue-datepicker",
+   ],
+}

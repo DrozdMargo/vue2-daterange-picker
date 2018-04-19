@@ -101,6 +101,9 @@
         default: 'center'
       }
     },
+    mounted() {
+      this.calcMonthDate()
+    },
     data() {
       let default_locale = {
         direction: 'ltr',
