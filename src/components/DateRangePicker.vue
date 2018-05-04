@@ -4,7 +4,7 @@
       <slot name="input">
         <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
         <span v-if="startText && endText">{{startText}} - {{endText}}</span>
-        <span v-else>Please select a date range.</span>
+        <span v-else>{{$t('Please select a date range.')}}</span>
         <b class="caret"></b>
       </slot>
     </div>
@@ -99,6 +99,10 @@
       opens: {
         type: String,
         default: 'center'
+      },
+      text: {
+        applyLabel: String,
+        cancelLabel: String
       }
     },
     mounted() {
@@ -144,6 +148,7 @@
         this.monthDate = moment(this.end).startOf('month').add(-1, 'month').toDate()
       },
       nextMonth() {
+        console.log(this.locale)
         this.monthDate = nextMonth(this.monthDate)
       },
       prevMonth() {

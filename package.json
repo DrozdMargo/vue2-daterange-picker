@@ -1,6 +1,6 @@
 {
   "name": "vue2-daterange-picker-with-custom-button",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Vue2 date range picker forked from https://innologica.github.io/vue2-daterange-picker/ based on https://github.com/dangrossman/bootstrap-daterangepicker (no jQuery)",
   "contributor": "Margo Drozd",
   "main": "dist/lib/vue-daterange-picker.min.js",
@@ -25,6 +25,8 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "@panter/vue-i18next": "^0.9.1",
+    "i18next": "^11.2.3",
     "js-beautify": "^1.7.5",
     "moment": "^2.21.0",
     "vue": "^2.5.13",

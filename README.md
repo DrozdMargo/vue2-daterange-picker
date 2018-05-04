@@ -3,9 +3,7 @@
 > Vue2 date range picker base on https://github.com/dangrossman/bootstrap-daterangepicker (no jQuery)
 
 
-## Demo
-You can see a demo here: 
-https://innologica.github.io/vue2-daterange-picker/
+
 
 ## Installlation
 
@@ -38,11 +36,17 @@ export default {
 </template>
 ```
 
+```
+:locale-data="{ daysOfWeek: [ 'Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб' ] }" for locale lang
+```
+
 ### Run local demo
 
 ```npm install```
 
 ```npm run dev```
 
+
+added translation with
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 

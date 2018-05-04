@@ -1,16 +1,16 @@
 <template>
     <div class="ranges">
         <div class="range_inputs">
-            <button class="applyBtn btn btn-sm btn-success" :disabled="canSelect" type="button" @click="$emit('clickApply')">Apply</button>
-            <button class="cancelBtn btn btn-sm btn-default" type="button" @click="$emit('clickCancel')">Clear</button>
+            <button class="applyBtn btn btn-sm btn-success" :disabled="canSelect" type="button" @click="$emit('clickApply')">{{$t('Apply')}}</button>
+            <button class="cancelBtn btn btn-sm btn-default" type="button" @click="$emit('clickCancel')">{{$t('Cancel')}}</button>
         </div>
 
         <ul v-if="ranges">
-            <li v-for="(value, key) in ranges" :key="key" @click="selectedRange(key)">{{key}}</li>
+            <li v-for="(value, key) in ranges" :key="key" @click="selectedRange(key)">{{$t(key)}}</li>
         </ul>
       
         <div class="ranges-custom-button">
-            <button @click="$emit('customEvent')" class="custom-button">{{custom}}</button>
+            <button @click="$emit('customEvent')" class="custom-button">{{$t(custom)}}</button>
         </div>
     </div>
 </template>

@@ -50,8 +50,8 @@
         :endDate="endDate"
         @update="updateValues"
         @cancel="openSchedules"
-        :custom="text"
-      ></date-range-picker>
+        :custom="text">
+      </date-range-picker>
     </div>
   </div>
 </template>
@@ -69,8 +69,11 @@
         startDate: '2017-09-19',
         endDate: '2017-10-09',
         showModal: false,
-        text: 'some text'
-      }
+        text: 'some text',
+      //   optionLocale: {
+      //     daysOfWeek: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'],
+      //   },
+       }
     },
     methods: {
       updateValues(values) {
